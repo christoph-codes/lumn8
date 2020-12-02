@@ -3,3 +3,52 @@
 h1,h2,h3,h4,h5,h6,p,li,a {
   font-family: 'Gothic A1', sans-serif;
 }
+html {
+  background: black;
+}
+body {
+  background: transparent;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+#bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -99999;
+}
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+} 
+.tm-headerbar {
+  height: 100vh;
+  margin: 0;
+  max-width: none;
+    float: none;
+}
+.tm-headerbar .uk-panel {
+  height: 100vh;
+  margin: 0;
+  max-width: none;
+  float: none; 
+}
+.hero {
+  height: 100vh;
+}
+.hero-content h1 {
+  font-size: 6rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+.hero-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
+}
