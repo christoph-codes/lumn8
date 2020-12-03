@@ -12,3 +12,6 @@ if (version_compare(PHP_VERSION, '5.3', '>=')) {
     // bootstrap warp
     require(__DIR__.'/warp.php');
 }
+
+// Allow shortcodes in widgets
+add_filter( 'widget_text', 'do_shortcode' );

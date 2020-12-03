@@ -48,12 +48,8 @@ include($this['path']->path('layouts:theme.config.php'));
 						<?php if ($this['widgets']->count('menu + search')) : ?>
 							<nav class="tm-navbar uk-navbar">
 
-								<?php if ($this['widgets']->count('menu')) : ?>
-									<?php echo $this['widgets']->render('menu'); ?>
-								<?php endif; ?>
-
 								<?php if ($this['widgets']->count('offcanvas')) : ?>
-									<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+									<a href="#offcanvas" data-uk-offcanvas="{mode:'slide'}"><img class="toggler" src="/wp-content/themes/yoo_master2_wp/images/navmenu_icon.svg" alt="Menu Icon" /></a>
 								<?php endif; ?>
 
 								<?php if ($this['widgets']->count('search')) : ?>
@@ -157,7 +153,7 @@ include($this['path']->path('layouts:theme.config.php'));
 
 	<?php if ($this['widgets']->count('offcanvas')) : ?>
 		<div id="offcanvas" class="uk-offcanvas">
-			<div class="uk-offcanvas-bar"><?php echo $this['widgets']->render('offcanvas'); ?></div>
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip"><?php echo $this['widgets']->render('offcanvas'); ?></div>
 		</div>
 	<?php endif; ?>
 	

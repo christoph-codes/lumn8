@@ -1,24 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600&display=swap');
 
+:root {
+  --primary: #F4B234;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
 h1,h2,h3,h4,h5,h6,p,li,a {
   font-family: 'Gothic A1', sans-serif;
 }
+.primary {
+  color: var(--primary);
+}
 html {
-  background: black;
+  background: var(--black);
 }
 body {
   background: transparent;
-  color: white;
+  color: var(--white);
   min-height: 100vh;
   width: 100%;
+}
+.uk-panel-box {
+  padding: 0;
+  background: none;
 }
 #bgvideo {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
   z-index: -99999;
+  object-fit: cover;
 }
 .nav-container {
   position: fixed;
@@ -37,18 +51,119 @@ body {
   max-width: none;
   float: none; 
 }
+a.tm-logo h1 {
+  text-indent: -9999px;
+  background: url(../images/lumn8-logo_white.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 150px;
+  margin: 0;
+}
+.uk-navbar {
+  background: transparent;
+}
+.uk-navbar img.toggler {
+  width: 50px;
+}
 .hero {
   height: 100vh;
 }
+span.triangle {
+  display: inline-block;
+  border-top: 6rem solid var(--primary);
+  border-left: 4rem solid transparent;
+  vertical-align: top;
+  margin-top: 27px;
+  margin-right: 15px;
+}
 .hero-content h1 {
+  display: inline-block;
   font-size: 6rem;
   line-height: 1;
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: var(--white);
 }
 .hero-content p {
   font-size: 2rem;
   line-height: 1.5;
+  color: var(--white);
+}
+.hero-content p span {
+  color: var(--primary);
+}
+.page-id-11 h1.uk-article-title {
+  display: none;
+}
+.service h2 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.luminate-content {
+  border-top: solid 1px var(--white);
+  padding: 50px 0;
+  border-bottom: solid 1px var(--white);
+}
+.luminate-content h2 {
   color: white;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.25;
+}
+.gform_wrapper input[type=text], .gform_wrapper textarea {
+  padding: 10px !important;
+  border: none;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+.gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+  color: var(--primary);
+}
+.gform_button {
+    background: var(--black);
+    border: none;
+    width: 100% !important;
+    display: block;
+    padding: 20px;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.25rem !important;
+    cursor: pointer;
+}
+.gform_wrapper div.validation_error, .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+.gform_wrapper div.validation_error, .gform_wrapper .validation_message, .gform_wrapper .gfield_required, .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label, .gform_wrapper li.gfield_error ul.gfield_checkbox, .gform_wrapper li.gfield_error ul.gfield_radio {
+  color: var(--primary);
+}
+.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper li.gfield_error textarea {
+  border: 2px solid var(--primary);
+}
+.uk-offcanvas-bar.uk-offcanvas-bar-flip {
+  background: rgba(0,0,0,0.9);
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .uk-nav.uk-nav-offcanvas > li > a {
+  background: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 5rem;
+  color: var(--primary);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary); 
+  line-height: 1.5;
+}
+html .uk-nav.uk-nav-offcanvas > li > a:hover {
+  color: var(--primary);
 }
